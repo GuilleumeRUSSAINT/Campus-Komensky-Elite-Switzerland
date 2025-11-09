@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Komensky Elite Switzerland | Formations d'excellence en Sciences Humaines</title>
+    <meta name="description" content="Cabinet Komensky Elite Switzerland : formations d'excellence en préparation Sciences Po, certification praticiens HPI, stages intensifs. Plus de 40 ans d'expérience pédagogique.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Campus Komensky Elite Switzerland">
+    <meta property="og:description" content="Formations d'excellence : Prépa Sciences Po, Tests HPI, Stages intensifs. Cabinet suisse, tradition pédagogique depuis 1980.">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Campus Komensky Elite Switzerland">
+    <meta name="twitter:description" content="Formations d'excellence en sciences humaines et sociales">
+    
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+header {
+    background: linear-gradient(135deg, #008B8B 0%, #20B2AA 100%);
+    color: white;
+    padding: 3rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    opacity: 0.95;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-top: 1rem;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.content-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: #008B8B;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #20B2AA;
+}
+
+h3 {
+    color: #006666;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+
+.formations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.formation-card {
+    background: white;
+    border: 2px solid #008B8B;
+    border-radius: 10px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.formation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,139,139,0.3);
+    border-color: #20B2AA;
+}
+
+.formation-icon {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.formation-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #008B8B;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.formation-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.formation-details {
+    background-color: #E0F7FA;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    margin-top: 1rem;
+}
+
+.formation-status {
+    text-align: center;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.status-available {
+    background-color: #C8E6C9;
+    color: #2E7D32;
+}
+
+.status-coming {
+    background-color: #FFE082;
+    color: #F57C00;
+}
+
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #008B8B 0%, #20B2AA 100%);
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    margin: 0.5rem;
+    text-align: center;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,139,139,0.4);
+}
+
+.quote {
+    background-color: #f0f0f0;
+    padding: 1.5rem;
+    border-left: 4px solid #008B8B;
+    font-style: italic;
+    font-size: 1.1rem;
+    margin: 2rem 0;
+}
+
+.quote-author {
+    text-align: right;
+    font-weight: bold;
+    color: #008B8B;
+    margin-top: 0.5rem;
+}
+
+.highlight {
+    background-color: #FFFACD;
+    padding: 1.5rem;
+    border-left: 4px solid #FFD700;
+    border-radius: 5px;
+    margin: 1.5rem 0;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.value-card {
+    background: linear-gradient(135deg, #008B8B 0%, #20B2AA 100%);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.value-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.value-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.value-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #006666;
+    color: white;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.footer-links {
+    margin: 1rem 0;
+}
+
+.footer-link {
+    color: #B2EBF2;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.footer-link:hover {
+    color: #FFD700;
+}
+
+ul {
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+strong {
+    color: #008B8B;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .formations-grid {
+        grid-template-columns: 1fr;
+    }
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>🎓 Campus Komensky Elite Switzerland</h1>
+            <p class="subtitle">Cabinet de formation en Sciences Humaines et Sociales</p>
+            <p class="tagline">Excellence • Universalisme • Tradition pédagogique depuis 1980</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="content-box">
+            <h2>Bienvenue au Campus Komensky Elite</h2>
+            
+            <div class="quote">
+                <p>« Le moins qu'on puisse attendre d'un Homme cultivé, c'est qu'il connaisse son temps. »</p>
+                <p class="quote-author">— Émile BOUTMY, fondateur de Sciences Po</p>
+            </div>
+
+            <div class="intro-text">
+                <p>Le <strong>Cabinet Komensky Elite Switzerland</strong> est un centre de formation spécialisé en Sciences Humaines et Sociales, établi en Suisse et opérant dans la tradition pédagogique franco-suisse. Depuis plus de 40 ans, nous développons des programmes d'excellence destinés aux étudiants et professionnels souhaitant approfondir leurs connaissances et compétences.</p>
+                
+                <p>Notre philosophie repose sur l'<strong>universalisme français</strong> issu du siècle des Lumières. Nous cultivons les valeurs de démocratie, d'esprit critique, de laïcité et d'excellence académique accessible au mérite.</p>
+            </div>
+
+            <div class="highlight">
+                <p><strong>🌟 Plus de 1000 étudiants formés avec succès depuis 1980</strong></p>
+                <p>Notre expérience pédagogique s'étend sur quatre décennies de formation d'excellence en préparation aux grandes écoles et en certification professionnelle.</p>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h2>Nos Formations</h2>
+
+            <div class="formations-grid">
+                <!-- Formation Prépa Sciences Po -->
+                <a href="prepa-sciencespo/prepa-index.html" class="formation-card">
+                    <div class="formation-icon">📚</div>
+                    <div class="formation-title">Préparation Sciences Po</div>
+                    <div class="formation-description">
+                        Formation complète pour intégrer Sciences Po Paris ou un IEP de région
+                    </div>
+                    <div class="formation-details">
+                        <strong>Public :</strong> Élèves de Terminale et Licence 3<br>
+                        <strong>Format :</strong> 100% en distanciel<br>
+                        <strong>Durée :</strong> Année scolaire complète<br>
+                        <strong>Modules :</strong> 10 modules thématiques
+                    </div>
+                    <div class="formation-status status-available">
+                        ✓ Disponible 2025-2026
+                    </div>
+                </a>
+
+                <!-- Formation HPI -->
+                <div class="formation-card" style="opacity: 0.9;">
+                    <div class="formation-icon">🧠</div>
+                    <div class="formation-title">Certification Praticiens HPI</div>
+                    <div class="formation-description">
+                        Formation professionnelle aux tests de Haut Potentiel Intellectuel
+                    </div>
+                    <div class="formation-details">
+                        <strong>Public :</strong> Professionnels de l'éducation et psychologues<br>
+                        <strong>Format :</strong> Formation certifiante<br>
+                        <strong>Certification :</strong> Tests HPI Shanghai<br>
+                        <strong>Débouchés :</strong> Praticien certifié
+                    </div>
+                    <div class="formation-status status-coming">
+                        📅 Documentation prochainement disponible
+                    </div>
+                </div>
+
+                <!-- Fiches techniques -->
+                <a href="fiches-techniques/index.html" class="formation-card">
+                    <div class="formation-icon">📖</div>
+                    <div class="formation-title">Fiches Techniques en ligne</div>
+                    <div class="formation-description">
+                        Ressources pédagogiques sur l'histoire politique française
+                    </div>
+                    <div class="formation-details">
+                        <strong>Contenu :</strong> Régimes politiques français<br>
+                        <strong>Période :</strong> De la Révolution à nos jours<br>
+                        <strong>Format :</strong> Fiches détaillées en ligne<br>
+                        <strong>Accès :</strong> Libre et gratuit
+                    </div>
+                    <div class="formation-status status-available">
+                        ✓ Accessible immédiatement
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h2>Nos Valeurs</h2>
+
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">🎯</div>
+                    <div class="value-title">Excellence Académique</div>
+                    <div class="value-text">
+                        Contenus pédagogiques rigoureux élaborés par des diplômés de Sciences Po Paris
+                    </div>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">🌍</div>
+                    <div class="value-title">Universalisme</div>
+                    <div class="value-text">
+                        Héritiers de Montaigne, Diderot et Voltaire : esprit critique et humanisme
+                    </div>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">⚖️</div>
+                    <div class="value-title">Laïcité</div>
+                    <div class="value-text">
+                        Promotion d'un enseignement de qualité pour tous, fondé sur le mérite
+                    </div>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">🤝</div>
+                    <div class="value-title">Bienveillance</div>
+                    <div class="value-text">
+                        Accompagnement personnalisé dans une tradition pédagogique exigeante et humaine
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h2>Notre Implantation Suisse</h2>
+
+            <div class="intro-text">
+                <p>Notre implantation en Suisse s'inscrit dans une tradition intellectuelle franco-suisse illustrée par de grandes figures comme Voltaire. Cette localisation nous permet de bénéficier d'un environnement stable et favorable au développement de notre mission pédagogique.</p>
+                
+                <p>Le Cabinet Komensky Elite Switzerland s'acquitte intégralement de ses obligations fiscales en Suisse et dans les pays où il opère. Nous développons également une franchise francophone des Tests HPI en partenariat avec l'université de Shanghai.</p>
+            </div>
+
+            <div class="highlight">
+                <p><strong>Notre héritage :</strong> Nous rendons hommage à Richard Descoings, l'un de nos fondateurs historiques, diplômé de Sciences Po Paris et d'origine franco-suisse, dont l'œuvre d'ouverture continue d'inspirer notre action.</p>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h2>Contact & Information</h2>
+
+            <div class="intro-text">
+                <p><strong>📧 Email :</strong> guillaume.russaint@proton.me</p>
+                <p><strong>🌐 Site web :</strong> <a href="https://eskoladonibane.wixsite.com/club-komensky" target="_blank" style="color: #008B8B;">https://eskoladonibane.wixsite.com/club-komensky</a></p>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="prepa-sciencespo/prepa-index.html" class="cta-button">
+                    📚 Découvrir la Prépa Sciences Po
+                </a>
+                <a href="fiches-techniques/index.html" class="cta-button">
+                    📖 Consulter les Fiches Techniques
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p><strong>Campus Komensky Elite Switzerland</strong></p>
+            <p>Cabinet de formation en Sciences Humaines et Sociales</p>
+            
+            <div class="footer-links">
+                <a href="prepa-sciencespo/prepa-index.html" class="footer-link">Prépa Sciences Po</a> •
+                <a href="fiches-techniques/index.html" class="footer-link">Fiches Techniques</a> •
+                <a href="https://eskoladonibane.wixsite.com/club-komensky" target="_blank" class="footer-link">Site Principal</a>
+            </div>
+            
+            <p style="margin-top: 1rem;">Propriété intellectuelle © KES - Version 2025</p>
+            <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.5rem;">
+                Tradition pédagogique depuis 1980 • Excellence • Universalisme • Bienveillance
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
